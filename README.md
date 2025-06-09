@@ -8,7 +8,7 @@ Proyek ini mengimplementasikan sistem klasifikasi sampah dengan menggunakan tekn
 ---
 ## Dataset
 
-Proyek ini menggunakan [dataset] (https://www.kaggle.com/datasets/sudipp/garbage-dataset-9-classes/data) dari Kaggle dengan 10 kelas, yang berisi lebih dari 20.000 gambar yang didistribusikan:
+Proyek ini menggunakan [dataset](https://www.kaggle.com/datasets/sudipp/garbage-dataset-9-classes/data) dari Kaggle dengan 10 kelas, yang berisi lebih dari 20.000 gambar yang didistribusikan:
 
 1. battery: 1889
 2. biological: 1982
