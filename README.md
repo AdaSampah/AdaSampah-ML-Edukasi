@@ -21,7 +21,7 @@ Proyek ini menggunakan [dataset] (https://www.kaggle.com/datasets/sudipp/garbage
 9. shoes: 1977
 10. trash: 1644 (general waste that couldn't be grouped)
 
-**Visualisasi untuk setiap kelas**
+### **Visualisasi untuk setiap kelas**
 ![classDistribution](/assets/classDistribution.png)
 
 
