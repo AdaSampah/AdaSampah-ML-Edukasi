@@ -3,7 +3,7 @@ Sebuah proyek pembelajaran mesin untuk mengklasifikasikan sampah ke dalam 10 kat
 
 ---
 ## Overview
-Proyek ini mengimplementasikan sistem klasifikasi sampah dengan menggunakan teknik deep learning. Model ini dapat mengklasifikasikan sampah ke dalam 10 kategori yang berbeda dan memberikan saran tentang bagaimana menangani (reuse, reduce, recycle) sampah tersebut. Setiap kelas mewakili jenis sampah dengan metode pembuangan atau pengolahan yang direkomendasikan.
+Proyek ini mengimplementasikan sistem klasifikasi sampah dengan menggunakan teknik deep learning. Model ini dapat mengklasifikasikan sampah ke dalam 10 kategori kelas.
 
 ---
 ## Dataset
