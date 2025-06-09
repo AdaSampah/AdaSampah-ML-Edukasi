@@ -1,15 +1,14 @@
 # AdaSampah - ML Model for Garbage Classification
-
-A machine learning project for classifying garbage into 10 different categories using Convolutional Neural Networks (CNN) with transfer learning. 
+Sebuah proyek pembelajaran mesin untuk mengklasifikasikan sampah ke dalam 10 kategori yang berbeda menggunakan Convolutional Neural Networks (CNN) dengan pembelajaran transfer. 
 
 ---
 ## Overview
-This project implements a garbage classification system using deep learning techniques. The model can classify waste items into 10 different categories and give a suggestion on how to handle (reuse, reduce, recycle) said waste. Each class represents a type of waste with its own recommended method of disposal or treatment.
+Proyek ini mengimplementasikan sistem klasifikasi sampah dengan menggunakan teknik deep learning. Model ini dapat mengklasifikasikan sampah ke dalam 10 kategori yang berbeda dan memberikan saran tentang bagaimana menangani (reuse, reduce, recycle) sampah tersebut. Setiap kelas mewakili jenis sampah dengan metode pembuangan atau pengolahan yang direkomendasikan.
 
 ---
 ## Dataset
 
-The project uses a [dataset](https://www.kaggle.com/datasets/sudipp/garbage-dataset-9-classes/data) from Kaggle with 10 classes, containing over 20,000 images distributed across:
+Proyek ini menggunakan [dataset] (https://www.kaggle.com/datasets/sudipp/garbage-dataset-9-classes/data) dari Kaggle dengan 10 kelas, yang berisi lebih dari 20.000 gambar yang didistribusikan:
 
 1. battery: 1889
 2. biological: 1982
@@ -22,18 +21,23 @@ The project uses a [dataset](https://www.kaggle.com/datasets/sudipp/garbage-data
 9. shoes: 1977
 10. trash: 1644 (general waste that couldn't be grouped)
 
-![classDistribution]("assets/classDistribution.png")
+**Visualisasi untuk setiap kelas**
+![classDistribution](/assets/classDistribution.png)
+
 
 ---
 ## Data Distribution
 ### Data Training
+![dataTraining](/assets/dataTraining.png)
 ### Data Validation
+![dataValidation](/assets/dataValidation.png)
 ### Data Test
+![dataTest](/assets/dataTest.png)
 
 
 ## Model Architecture and Training
 
-The model uses **Transfer Learning** with MobileNetV2 as the base model:
+Model ini menggunakan **Transfer Learning** dengan MobileNetV2 sebagai base model:
 
 ### Model Configuration
 - **Base Model**: MobileNetV2 (pre-trained on ImageNet, frozen layers)
@@ -50,8 +54,8 @@ The model uses **Transfer Learning** with MobileNetV2 as the base model:
 **Loss Function**: Categorical Crossentropy.
 **Epochs**: 10
 **Callbacks**: 
-- early_stop: Monitors validation loss and stops training early (overfitting preventions)
-- reduce_lr: Monitors validation loss and reduces learning rate by half (helps in fine-tune training)
+- early_stop: Memantau kehilangan validasi dan menghentikan pelatihan lebih awal (pencegahan overfitting)
+- reduce_lr: Memantau kehilangan validasi dan mengurangi laju pembelajaran hingga setengahnya (membantu dalam menyempurnakan pelatihan)
 
 ### Model Performance
 - **Initial Training Accuracy**: 0.6499 (Epoch 1)
